@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace for1_is_project
 {
-    public partial class Form5 : Form
+    public partial class Adddonators : Form
     {
-        public Form5()
+        public Adddonators()
         {
             InitializeComponent();
         }
@@ -49,7 +49,7 @@ namespace for1_is_project
             
             if (textBox1.Text != "" && textBox2.Text != "" && comboBox1.Text != "")
             {
-                int y; int x = Form4.value;
+                int y; int x = LoginForm.value;
                 SqlConnection con = new SqlConnection("Data Source=DESKTOP-9LCQ337;Initial Catalog=bloodsystem;Integrated Security=True");
                 con.Open();
                 SqlCommand cmd1 = new SqlCommand("select blood_id from [blood] where blood_type='" + comboBox1.Text + "'", con);
@@ -85,7 +85,7 @@ namespace for1_is_project
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form7 f7 = new Form7();
+            FilterForm f7 = new FilterForm();
             f7.Show();
 
         }

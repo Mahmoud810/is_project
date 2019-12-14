@@ -1,6 +1,6 @@
 ﻿namespace for1_is_project
 {
-    partial class Form6
+    partial class AdminForm
     {
         /// <summary>
         /// Required designer variable.

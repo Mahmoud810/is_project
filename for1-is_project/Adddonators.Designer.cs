@@ -1,6 +1,6 @@
 ﻿namespace for1_is_project
 {
-    partial class Form5
+    partial class Adddonators
     {
         /// <summary>
         /// Required designer variable.

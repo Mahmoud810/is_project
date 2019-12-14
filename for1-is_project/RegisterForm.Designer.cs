@@ -1,6 +1,6 @@
 ﻿namespace for1_is_project
 {
-    partial class Form2
+    partial class RegisterForm
     {
         /// <summary>
         /// Required designer variable.

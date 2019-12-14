@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace for1_is_project
 {
-    public partial class Form6 : Form
+    public partial class AdminForm : Form
     {
-        public Form6()
+        public AdminForm()
         {
             InitializeComponent();
         }

@@ -11,11 +11,11 @@ using System.Data.SqlClient;
 
 namespace for1_is_project
 {
-    public partial class Form2 : Form
+    public partial class RegisterForm : Form
     {
         
 
-        public Form2()
+        public RegisterForm()
         {
             InitializeComponent();
         }
@@ -96,7 +96,7 @@ namespace for1_is_project
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form4 f4 = new Form4();
+            LoginForm f4 = new LoginForm();
             f4.Show();
         }
 

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace for1_is_project
 {
-    public partial class Form4 : Form
+    public partial class LoginForm : Form
     {
         public void TotalCupom(string user_name,string pass)
         {
@@ -20,7 +20,7 @@ namespace for1_is_project
         }
      
 
-        public Form4()
+        public LoginForm()
         {
             InitializeComponent();
         }
@@ -45,7 +45,7 @@ namespace for1_is_project
                     if (dt.Rows[0][0].ToString() == "1")
                     {
                         this.Hide();
-                        Form5 f5 = new Form5();
+                        Adddonators f5 = new Adddonators();
                         f5.Show();
 
                     }
@@ -64,7 +64,7 @@ namespace for1_is_project
                     if (dt.Rows[0][0].ToString() == "1")
                     {
                         this.Hide();
-                        Form6 f6 = new Form6();
+                        AdminForm f6 = new AdminForm();
                         f6.Show();
 
                     }
@@ -89,7 +89,7 @@ namespace for1_is_project
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form2 f2 = new Form2();
+            RegisterForm f2 = new RegisterForm();
             f2.Show();
         }
 

@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace for1_is_project
 {
-    public partial class Form7 : Form
+    public partial class FilterForm : Form
     {
-        public Form7()
+        public FilterForm()
         {
             InitializeComponent();
         }
@@ -44,7 +44,7 @@ namespace for1_is_project
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-9LCQ337;Initial Catalog=bloodsystem;Integrated Security=True");
             con.Open();
-            SqlDataAdapter da = new SqlDataAdapter("select * from [request] where blood_id='" + textBox1.Text+"'", con);
+            SqlDataAdapter da = new SqlDataAdapter("select * from [request] where date='" + textBox1.Text+"'", con);
             DataTable dt = new DataTable();
             da.Fill(dt);
 
@@ -55,7 +55,7 @@ namespace for1_is_project
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            Form5 f5 = new Form5();
+            Adddonators f5 = new Adddonators();
             f5.Show();
         }
 
