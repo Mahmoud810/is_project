@@ -106,7 +106,7 @@ namespace for1_is_project
             con.Open();
             SqlCommand cmd = new SqlCommand("update  [user_table] set password='"+textBox10.Text+"' where use_id='" + dataGridView1.SelectedRows[0].Cells[0].Value + "'", con);
             cmd.ExecuteNonQuery();
-            dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
+            display_data();
             con.Close();
             MessageBox.Show("Updated3");
         }
