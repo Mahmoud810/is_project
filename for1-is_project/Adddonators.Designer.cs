@@ -124,15 +124,15 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(297, 210);
+            this.linkLabel1.Location = new System.Drawing.Point(319, 210);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(127, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(97, 13);
             this.linkLabel1.TabIndex = 8;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "To Filter Data Using Date";
+            this.linkLabel1.Text = "To Filter Click Here";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // Form5
+            // Adddonators
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -146,7 +146,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Name = "Form5";
+            this.Name = "Adddonators";
             this.Text = "add donators";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form5_FormClosed);
             this.Load += new System.EventHandler(this.Form5_Load);

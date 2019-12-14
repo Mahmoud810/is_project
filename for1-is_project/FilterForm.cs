@@ -63,5 +63,27 @@ namespace for1_is_project
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-9LCQ337;Initial Catalog=bloodsystem;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select count(*) from request ", con);
+            int count = (int)cmd.ExecuteScalar();
+            con.Close();
+            MessageBox.Show("numbers of donators :"+count.ToString());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-9LCQ337;Initial Catalog=bloodsystem;Integrated Security=True");
+            con.Open();
+            SqlDataAdapter da = new SqlDataAdapter("select * from [request] where user_id='" + textBox2.Text + "'", con);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+            con.Close();
+        }
     }
 }

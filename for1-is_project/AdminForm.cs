@@ -83,7 +83,12 @@ namespace for1_is_project
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-9LCQ337;Initial Catalog=bloodsystem;Integrated Security=True");
             con.Open();
             SqlCommand cmd = new SqlCommand("delete from [user_table] where use_id='"+dataGridView1.SelectedRows[0].Cells[0].Value+"'", con);
+            int x = 0;
+            x = (int)dataGridView1.SelectedRows[0].Cells[0].Value;
+            SqlCommand cmd1 = new SqlCommand("delete from request where user_id='"+dataGridView1.SelectedRows[0].Cells[0].Value+"'", con);
+            cmd1.ExecuteNonQuery();
             cmd.ExecuteNonQuery();
+           
             dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
             con.Close();
             MessageBox.Show("deleted");
